@@ -1,26 +1,36 @@
 # Online Learning Platform
 
-This is a demo-level online learning platform built using the MONSTACK (MongoDB, Node.js, etc.) stack. Users can:
+This is a demo-level Online Learning Platform built using the **MONSTACK** (MongoDB, Node.js, Express.js, React.js, Tailwind CSS).
 
-- Download notes and video lectures
-- Access content offline
-- Store data securely in MongoDB
+## 🧠 Key Features
 
-## Features
+- User Registration and Authentication
+- Upload and Download Notes/Videos
+- Offline Access to Content
+- Responsive UI with Tailwind CSS
+- MongoDB for Secure Data Storage
 
-- User registration and login
-- Upload/download notes and videos
-- Offline content access
-- Responsive design
-
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **MongoDB** – NoSQL database
-- **Node.js** – Backend server
-- **Express.js** – Web framework
-- **React.js** – Frontend
+- **Express.js** – Backend framework
+- **Node.js** – Server environment
+- **React.js** – Frontend library
 - **Tailwind CSS** – Styling
+- **Vite/Webpack** – React bundler
 
-## Getting Started
+## 🚀 Getting Started
 
-1. Clone the repo: git clone https://github.com/Bhoomikakt-123/Online_learning_platform.git
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- MongoDB (local or Atlas)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Bhoomikakt-123/Online_learning_platform.git
+   cd Online_learning_platform
+
