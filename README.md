@@ -23,4 +23,4 @@ This is a demo-level online learning platform built using the MONSTACK (MongoDB,
 
 ## Getting Started
 
-1. Clone the repo:
+1. Clone the repo: git clone https://github.com/Bhoomikakt-123/Online_learning_platform.git
