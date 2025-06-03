@@ -49,6 +49,10 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log('MongoDB URI:', MONGODB_URI); // Log the connection string being used
 
-app.get("/", (req, res) => {
-  res.send("Online Learning Platform API is live 🚀");
+app.get('/', (req, res) => {
+  res.send('Hello world');
+});
+
+app.listen(3000, () => {
+  console.log('Server running');
 });
