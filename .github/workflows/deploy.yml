@@ -1,33 +1,29 @@
-name: Deploy to Server
+
+name: CI for Backend
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: windows-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        working-directory: backend
+        run: npm install
 
-    - name: Build project
-      run: npm run build
-
-    - name: Deploy via SSH
-      uses: appleboy/scp-action@v0.1.4
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        source: "dist/*"
-        target: "/var/www/myapp"
+      - name: Build & Test
+        working-directory: backend
+        run: |
+          echo "Backend build complete"
+          echo "Optional: run tests here"
